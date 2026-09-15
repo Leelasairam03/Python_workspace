@@ -25,6 +25,4 @@ print(reduce(lambda a,b:a+b,[10,20,30,40,50]))
 
 print(reduce(lambda a,b:a*b,[10,20,30,40,50]))
 
-
 print(list(map(lambda x:x**2,(filter(lambda n:n%2==0,[10,15,20,25,30,25])))))
-
