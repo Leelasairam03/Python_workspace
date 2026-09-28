@@ -54,6 +54,11 @@ few dunder methods:
 6)__eq__(self,other)
     -->called when two objects are compared using ==
     -->should return True if objects are equal,False otherwise
+    -->must return a boolean value
+    
+    syntax
+    def __eq__(self,other):
+        return self.var1==other.var1 and self.var2==other.var2
 
 7)__ne__(self,other)
     -->called when two objects are compared using !=
