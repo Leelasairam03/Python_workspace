@@ -22,17 +22,34 @@ few dunder methods:
     -->responsible for initializing the object's state(assigning values to instance variables)
 
 3)__str__(self)
-    -->called when object is converted to string
+    -->called when object is converted to string(when a object is printed or we call __str__(objref))
     -->should return a user friendly string representation
+    -->it is FullyQualifiedClassName @hexadecimal format
+    -->we can override to implement custom representation useful/understandable to user
+    -->must always return a string
+    
+    syntax to overide
+    class ClassName(object):
+    def __str__(self):
+        return "custom string"
 
 4)__repr__(self)
     -->called when object is converted to string
     -->should return an unambiguous string representation(developer friendly)
     -->used for debugging
+    -->runs only when __str__ is not defined
 
 5)__hash__(self)
     -->returns the hash value of the object
     -->used for storing objects in hash based data structures like sets and dict keys
+    -->invoked when hash(objref) is called,returns unique value(hash value)
+    -->quick search and fast retrival
+    -->must always return an integer value
+    
+    syntax
+    def __hash__(self):
+        return hash((self.var1,self.var2,...))
+
 
 6)__eq__(self,other)
     -->called when two objects are compared using ==
