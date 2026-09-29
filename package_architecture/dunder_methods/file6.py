@@ -25,3 +25,5 @@ isinstance(objref,classname) -> returns true if objref is an instance of classna
 '''
 print(isinstance(c1,Car))
 print(isinstance(c1,int))
+
+
