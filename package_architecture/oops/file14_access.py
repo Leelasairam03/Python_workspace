@@ -23,10 +23,19 @@ s1=Student('sai ram',21)
 print(s1.name)
 print(s1.age)
 
+2)protected
+we use a single underscore prefix to denote a protected variable or method
 
+class Student:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    
+    def _protected_method(self):
+        print("protected method")
 
-2)private
-by default all variables and methods are public
+3)private
+use double underscore prefix to denote a private variable or method
 
 
 '''

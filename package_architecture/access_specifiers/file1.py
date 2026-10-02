@@ -1,3 +1,4 @@
+#public
 class Park:
     authority="gba"                 #public class variables
 
