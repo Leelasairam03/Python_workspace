@@ -1,0 +1,4 @@
+today is tuesday
+tomorrow is wednesday
+thursday is mockday
+new line added
